@@ -7,7 +7,18 @@
 }
 
 body {
-    background: #0C0C0C;
+    min-height: 100vh; 
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    background-color: #0C0C0C;
+    background-image: url('../assets/images/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     margin: 0;
     font-family: "Inter", sans-serif;
 }
@@ -39,6 +50,7 @@ nav ul li a {
 }
 
 .bento-grid {
+    border: 1px solid rgba(255, 255, 255, );
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 80px 250px 250px;
@@ -136,6 +148,28 @@ h1 {
     cursor: pointer;
 }
 
+.project-icon-large {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    z-index: 0;
+}
+
+.folder-img {
+    width: 160px;
+    height: auto;
+    transform: rotate(-15deg);
+    -moz-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    -webkit-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+}
+
+.projects-card:hover .folder-img{
+    width: 240px;
+    transform: rotate(0);
+}
+
 /* gear card */
 .gear-card {
     grid-column: span 1;
@@ -171,3 +205,5 @@ h1 {
 .cta-card:hover {
     background-position: 100% 0;
 }
+
+/* responsive */
