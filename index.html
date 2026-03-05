@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,86 +10,214 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Home</title>
 </head>
+
 <body>
-    <!-- <nav>
-        <ul>
-            <li>
-                <a href="#">Home</a>
-            </li>
-            <li>
-                <a href="#">About</a>
-            </li>
-            <li>
-                <a href="">Project</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
-        </ul>
-    </nav> -->
 
-    <div class="bento-grid">
-        <nav class="nav-main">
-            <p></p>
+    <div class="welcome">
+        <!-- Mesh gradient blobs -->
+        <div class="mesh-blob blob-1"></div>
+        <div class="mesh-blob blob-3"></div>
 
-            <a href="/index.html" class="nav-link">Home</a>
-            <a href="#" class="nav-link">About</a>
-            <a href="#" class="nav-link">Projects</a>
-            <a href="#" class="nav-link">Gear</a>
-            <a href="#" class="nav-link">Contact</a>
-        </nav>
+        <!-- Grid overlay -->
+        <div class="grid-overlay"></div>
 
-        <div class="card profile-card">
-            <div class="profile-inner">
-                <img src="assets/icons/icon1.jpg" alt="profile" class="profile-img">
-                <div class="profile-text">
-                    <span class="sub-text">A Machine Learning Engineer</span>
-                    <h1>Nicolaus<br>Reva<br>Sagraha.</h1>
-                    <span class="sub-text">Student in Sanata Dharma University</span>
+        <!-- Floating particles -->
+        <div class="particle particle-1"></div>
+        <div class="particle particle-2"></div>
+        <div class="particle particle-3"></div>
+        <div class="particle particle-4"></div>
+        <div class="particle particle-5"></div>
+        <div class="particle particle-6"></div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome</h1>
+            <div class="hero-subtitle">to the future</div>
+        </div>
+
+        <a href="#content" class="scroll-indicator">
+            <div class="scroll-line"></div>
+        </a>
+    </div>
+
+    <div class="bento-section">
+        <!-- Bento background effects -->
+        <div class="bento-blob bento-blob-1"></div>
+        <div class="bento-blob bento-blob-2"></div>
+        <div class="bento-grid-overlay"></div>
+
+        <div id="content" class="bento-grid">
+
+            <div class="card profile-card">
+                <div class="profile-inner">
+                    <img src="assets/icons/icon1.jpg" alt="profile" class="profile-img">
+                    <div class="profile-text">
+                        <h1>Nicolaus Reva Sagraha</h1>
+                        <span class="sub-text">nicolaussagraha14@gmail.com</span>
+                        <br>
+                        <br>
+                        <span class="sub-text">An Informatics Student from Sanata Dharma University with strong interest
+                            in
+                            Machine Learning and Artificial Intelligence. Experienced in building and training machine
+                            learning model with PyTorch, and Tensorflow, and comfortable working in a Linux (Arch, Bash
+                            Scripting) Operating System for development and experimentation. Combining AI with software
+                            engineering to create practical, scalable and impactful solutions.</span>
+                    </div>
                 </div>
             </div>
 
-            <a href="/pages/about.html">
-                <div class="icon-arrow">→</div>
-            </a>
-        </div>
+            <div class="card projects-card">
+                <div class="projects-header">
+                    <h1>Projects.</h1>
+                </div>
 
-        <div class="card quote-card"></div>
+                <div class="projects-carousel">
+                    <div class="project-slide active">
+                        <div class="project-info">
+                            <h2 class="project-title">ML Image Classifier</h2>
+                            <span class="sub-text">Deep learning model for image classification using PyTorch with 95%
+                                accuracy on custom dataset.</span>
+                        </div>
+                        <div class="project-thumbnail">
+                            <img src="assets/images/bgg1.jpg" alt="ML Image Classifier">
+                        </div>
+                    </div>
 
-        <div class="card projects-card">
-            <div class="projects-text">
-                <h1>Projects.</h1>
-                <span class="sub-text">What I’ve been working on.</span>
+                    <div class="project-slide">
+                        <div class="project-info">
+                            <h2 class="project-title">NLP Sentiment Analysis</h2>
+                            <span class="sub-text">Natural language processing pipeline for sentiment analysis using
+                                TensorFlow and transformers.</span>
+                        </div>
+                        <div class="project-thumbnail">
+                            <img src="assets/images/bgg2.jpg" alt="NLP Sentiment Analysis">
+                        </div>
+                    </div>
+
+                    <div class="project-slide">
+                        <div class="project-info">
+                            <h2 class="project-title">Linux Dev Environment</h2>
+                            <span class="sub-text">Custom Arch Linux development environment with automated setup
+                                scripts and dotfiles.</span>
+                        </div>
+                        <div class="project-thumbnail">
+                            <img src="assets/images/bgg3.jpg" alt="Linux Dev Environment">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-nav">
+                    <div class="project-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <div class="project-arrows">
+                        <button class="arrow-btn" id="prev-project">←</button>
+                        <button class="arrow-btn" id="next-project">→</button>
+                    </div>
+                </div>
             </div>
 
-            <div class="project-icon-large">
-                <img src="assets/icons/folder.png" alt="Project Folder Icon" class="folder-img">
+            <div class="card my-stack">
+                <div class="stack-icons">
+                    <div class="stack-icon" style="top: 15%; left: 50%; transform: rotate(-12deg);">
+                        <svg viewBox="0 0 48 48" width="58" height="58"><text x="50%" y="55%" text-anchor="middle"
+                                dominant-baseline="middle" font-size="36">🐍</text></svg>
+                        <span>Python</span>
+                    </div>
+                    <div class="stack-icon" style="top: 30%; left: 28%; transform: rotate(8deg);">
+                        <svg viewBox="0 0 48 48" width="52" height="52"><text x="50%" y="55%" text-anchor="middle"
+                                dominant-baseline="middle" font-size="34">🔥</text></svg>
+                        <span>PyTorch</span>
+                    </div>
+                    <div class="stack-icon" style="top: 10%; left: 22%; transform: rotate(-18deg);">
+                        <svg viewBox="0 0 48 48" width="50" height="50"><text x="50%" y="55%" text-anchor="middle"
+                                dominant-baseline="middle" font-size="34">🧠</text></svg>
+                        <span>TensorFlow</span>
+                    </div>
+                    <div class="stack-icon" style="top: 40%; left: 55%; transform: rotate(15deg);">
+                        <svg viewBox="0 0 48 48" width="48" height="48"><text x="50%" y="55%" text-anchor="middle"
+                                dominant-baseline="middle" font-size="32">🐧</text></svg>
+                        <span>Linux</span>
+                    </div>
+                    <div class="stack-icon" style="top: 5%; left: 65%; transform: rotate(-6deg);">
+                        <svg viewBox="0 0 48 48" width="46" height="46"><text x="50%" y="55%" text-anchor="middle"
+                                dominant-baseline="middle" font-size="30">⚡</text></svg>
+                        <span>Git</span>
+                    </div>
+                    <div class="stack-icon" style="top: 45%; left: 35%; transform: rotate(-20deg);">
+                        <svg viewBox="0 0 48 48" width="50" height="50"><text x="50%" y="55%" text-anchor="middle"
+                                dominant-baseline="middle" font-size="32">💻</text></svg>
+                        <span>VS Code</span>
+                    </div>
+                </div>
+                <div class="stack-text">
+                    <h1>My stack.</h1>
+                    <span class="sub-text">AI & ML tools</span>
+                </div>
             </div>
 
-            <a href="/pages/project.html">
-                <div class="icon-arrow">→</div>
-            </a>
-        </div>
-
-        <div class="card gear-card">
-            <div class="gear-text">
-                <h1>Gear.</h1>
-                <span class="sub-text">The essentials.</span>
+            <div class="card learning-card">
+                <div class="learning-header">
+                    <h2 class="learning-title">📚 Learning</h2>
+                </div>
+                <div class="learning-list">
+                    <div class="learning-item">
+                        <div class="learning-dot"></div>
+                        <div class="learning-content">
+                            <span class="learning-name">Transformer Architecture</span>
+                            <span class="learning-tag">Deep Learning</span>
+                        </div>
+                    </div>
+                    <div class="learning-item">
+                        <div class="learning-dot"></div>
+                        <div class="learning-content">
+                            <span class="learning-name">Rust Programming</span>
+                            <span class="learning-tag">Systems</span>
+                        </div>
+                    </div>
+                    <div class="learning-item">
+                        <div class="learning-dot"></div>
+                        <div class="learning-content">
+                            <span class="learning-name">MLOps & Deployment</span>
+                            <span class="learning-tag">Engineering</span>
+                        </div>
+                    </div>
+                    <div class="learning-item">
+                        <div class="learning-dot"></div>
+                        <div class="learning-content">
+                            <span class="learning-name">Computer Vision</span>
+                            <span class="learning-tag">AI Research</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <a href="/pages/gear.html">
-                <div class="icon-arrow">→</div>
-            </a>
-        </div>
 
-        <div class="card cta-card">
-            <div class="cta-text">
-                <h1>Let's<br>Build<br>Together.</h1>
+            <div class="card cta-card">
+                <div class="cta-text">
+                    <h1>Let's<br>Build<br>Together.</h1>
+                </div>
+
+                <a href="/pages/about.html">
+                    <div class="icon-arrow-cta">→</div>
+                </a>
             </div>
 
-            <a href="/pages/about.html">
-                <div class="icon-arrow-cta">→</div>
-            </a>
+            <div class="thanks">
+                <div class="thx-text">
+                    <h1>Thank you for visiting......</h1>
+                </div>
+            </div>
         </div>
     </div>
+    <script src="js/index.js"></script>
 </body>
+
+<footer>
+    <div class="footer-container">
+        <p>"Always a student".</p>
+        <p>2026 All Rights Reserved by Nicolaus Reva</p>
+    </div>
+</footer>
+
 </html>
