@@ -1199,10 +1199,11 @@ footer {
 
     .thanks {
         grid-column: span 1;
+        height: 30vh;
     }
 
     .thanks .visualizer {
-        padding-top: 40px;
+        display: none;
     }
 
     .footer-container {
@@ -1264,6 +1265,7 @@ footer {
     }
 
     .profile-img {
+        display: none;
         width: 100px;
         height: 100px;
         border-radius: 12px;
