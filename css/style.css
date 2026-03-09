@@ -676,7 +676,7 @@ h1 {
 
 .stack-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     flex: 1;
 }
@@ -1040,13 +1040,129 @@ footer {
 
 /* Tablet / Small laptop — max 1024px */
 @media (max-width: 1024px) {
+
+    .hero-title {
+        font-size: 4.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.85rem;
+        letter-spacing: 6px;
+    }
+
     h1 {
         font-size: 2rem;
     }
 
     .bento-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: auto;
         gap: 15px;
         width: 90%;
+    }
+
+    .card {
+        padding: 26px;
+    }
+
+    /* Profile card */
+    .profile-card {
+        grid-column: span 4;
+    }
+
+    .profile-img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .profile-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .sub-text {
+        font-size: 0.92rem;
+    }
+
+    /* Projects card */
+    .projects-card {
+        grid-column: span 4;
+        padding: 26px;
+    }
+
+    .project-slide {
+        gap: 16px;
+    }
+
+    .project-thumbnail {
+        width: 160px;
+        height: 160px;
+    }
+
+    .project-title {
+        font-size: 1.2rem;
+    }
+
+    /* My Stack card */
+    .my-stack {
+        grid-column: span 4;
+    }
+
+    .stack-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+    }
+
+    .stack-item {
+        padding: 14px 8px;
+        gap: 6px;
+    }
+
+    .stack-icon {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    .stack-label {
+        font-size: 0.65rem;
+    }
+
+    /* Learning card */
+    .learning-card {
+        grid-column: span 4;
+        padding: 26px;
+    }
+
+    .learning-name {
+        font-size: 0.82rem;
+    }
+
+    /* CTA card */
+    .cta-card {
+        grid-column: span 4;
+    }
+
+    .cta-card h1 {
+        font-size: 1.8rem;
+    }
+
+    /* Socials card */
+    .socials-card {
+        grid-column: span 4;
+        padding: 26px;
+    }
+
+    .social-item {
+        padding: 18px 20px;
+    }
+
+    /* Thanks */
+    .thanks {
+        grid-column: span 4;
+    }
+
+    /* Footer */
+    .footer-container {
+        width: 85%;
     }
 }
 
@@ -1153,7 +1269,7 @@ footer {
     }
 
     .stack-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 8px;
     }
 
